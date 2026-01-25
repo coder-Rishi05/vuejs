@@ -1,32 +1,37 @@
 <script setup>
-
+import { ref } from 'vue';
+const name = ref("rishi")
+const vue = ref("VUE.js")
+const emogi = ref("🫡")
+const year = ref("2026")
 </script>
 
 <template>
-  <header>
-   <h1>Hello view js </h1>
-  </header>
 
-  <RouterView />
+<header>
+{{ emogi }}
+</header>
+
+<h1>Heloo {{ name }} </h1>
+<p> am about to learn {{ vue }}!</p>
+
+<footer>
+  <p><span>@copy</span>:{{ year }}</p>
+</footer>
+
 </template>
 
 <style scoped>
 header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-
-
-nav {
-  width: 100%;
-  font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
-
+  font-size: 3rem;
 }
 
-h1{
-  color: antiquewhite;
+h1,p{
+  text-align: center;
+}
+
+span {
+  color: blue;
 }
 </style>

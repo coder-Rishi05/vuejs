@@ -42,3 +42,44 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Vue Fundamentals
+
+Vue is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS, and JavaScript and provides a declarative, component-based programming model that helps you efficiently develop user interfaces of any complexity.
+
+### Vue anatomy
+
+- src
+  App.vue : the main page of of vue
+  main.js : link html to vue
+
+### The view
+
+- components
+
+in view every code is break down into components
+
+this is single file component
+
+```sh
+<script setup>
+</script>
+
+<template>
+</template>
+
+<style scoped>
+</style>
+
+
+```
+
+- @ alias
+
+- Reactivity
+
+- Template syntax
+
+- using images
+
+### seperation of concerns
