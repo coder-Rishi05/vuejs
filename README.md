@@ -83,3 +83,27 @@ this is single file component
 - using images
 
 ### seperation of concerns
+
+seperation of concerns is not equal to the seperation of file types
+
+view seperate by purpose not by language 
+header
+main
+footer
+
+### layout components
+
+structural components
+
+### the @ alias
+
+this is used to import the files like ./
+
+this is created by vite
+
+```js
+ alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    },
+```
+this lines means replace with absolute file path.
