@@ -107,3 +107,7 @@ this is created by vite
     },
 ```
 this lines means replace with absolute file path.
+
+### view component challange part 1
+
+![alt text](image.png)

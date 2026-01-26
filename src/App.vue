@@ -1,13 +1,22 @@
-<script setup>
-import Header from '@/components/Header.vue'
-import Template from '@/components/Template.vue'
-import Footer from '@/components/Footer.vue'
-</script>
+<script setup></script>
 
 <template>
-  <Header />
-  <Template />
-  <Footer />
+  <header>
+    <h1>Quote Generator</h1>
+  </header>
+
+  <section>
+    <h2>
+      "First Solve the<br />
+      problem.then, write the code "
+    </h2>
+    <sub>John Johnson</sub>
+
+    <button>Another</button>
+  </section>
+
+  <footer>Created by <i>Professor Pickle &copy;2026 </i></footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>
