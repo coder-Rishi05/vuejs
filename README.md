@@ -116,3 +116,39 @@ this lines means replace with absolute file path.
 
 this function make vue update the dom on the variable update to make a variable reactice we use ref
 
+```vue
+<script setup>
+import { ref } from 'node:process';
+const title = ref(" <h1>Quote Generator</h1>")
+</script>
+
+<template>
+  <header>
+{{ title }}
+  </header>
+</template>
+
+<style scoped>
+
+h1{
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 3rem 0;
+  color: rgba(255, 255, 255, 0.518);
+  font-weight: 900;
+}
+
+</style>
+
+```
+
+### template syntax text interpolation
+
+rendering ref
+  {{title}}
+  to change its value
+
+```jsx
+const title = ref(" <h1>Quote Generator</h1>")
+title.value = "personalised quotes"
+```
