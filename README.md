@@ -107,3 +107,12 @@ this is created by vite
     },
 ```
 this lines means replace with absolute file path.
+
+### challange - 2
+
+![alt text](image.png)
+
+### reactivity
+
+this function make vue update the dom on the variable update to make a variable reactice we use ref
+
