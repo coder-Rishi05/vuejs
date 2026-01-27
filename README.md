@@ -152,3 +152,9 @@ rendering ref
 const title = ref(" <h1>Quote Generator</h1>")
 title.value = "personalised quotes"
 ```
+
+![alt text](image-1.png)
+
+- we can also use v-bind:href attribute for img 
+
+![alt text](image-2.png)
