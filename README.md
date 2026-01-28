@@ -67,7 +67,7 @@ this is single file component
 
 seperation of concerns is not equal to the seperation of file types
 
-view seperate by purpose not by language 
+view seperate by purpose not by language
 header
 main
 footer
@@ -87,6 +87,7 @@ this is created by vite
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
 ```
+
 this lines means replace with absolute file path.
 
 ### challange - 2
@@ -99,46 +100,76 @@ this function make vue update the dom on the variable update to make a variable 
 
 ```vue
 <script setup>
-import { ref } from 'node:process';
-const title = ref(" <h1>Quote Generator</h1>")
+import { ref } from 'node:process'
+const title = ref(' <h1>Quote Generator</h1>')
 </script>
 
 <template>
   <header>
-{{ title }}
+    {{ title }}
   </header>
 </template>
 
 <style scoped>
-
-h1{
+h1 {
   text-align: center;
   font-size: 2.5rem;
   padding: 3rem 0;
   color: rgba(255, 255, 255, 0.518);
   font-weight: 900;
 }
-
 </style>
-
 ```
 
 ### template syntax text interpolation
 
 rendering ref
-  {{title}}
-  to change its value
+{{title}}
+to change its value
 
 ```jsx
-const title = ref(" <h1>Quote Generator</h1>")
-title.value = "personalised quotes"
+const title = ref(' <h1>Quote Generator</h1>')
+title.value = 'personalised quotes'
 ```
 
 ![alt text](image-1.png)
 
-- we can also use v-bind:href attribute for img 
+- we can also use v-bind:href attribute for img
 
 ![alt text](image-2.png)
 
 ### v-bind Booleans Attributes and shorthands
 
+v-bind can also work with boolean attributes
+
+```js
+const isBtnDisabled = ref (true)
+
+v-Bind:disabled="isBtnDisabled"
+
+<button v-bind:disabled="isBtnDisabled" >
+Share
+</button>
+
+v-bind:href
+can be also written as
+  :href="href" can be written as shorthand
+    :href shorthand
+    and work same
+
+```
+
+### reactivity & template syntax
+
+```js
+
+import {ref} from "vue"
+const href = ref("https://vue.org/")
+
+<a :href >This is link</a>
+
+```
+
+any file in public folder can be acessed directly without any nesting /
+
+![alt text](image-3.png)
