@@ -158,3 +158,6 @@ title.value = "personalised quotes"
 - we can also use v-bind:href attribute for img 
 
 ![alt text](image-2.png)
+
+### v-bind Booleans Attributes and shorthands
+
