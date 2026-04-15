@@ -159,7 +159,9 @@ can be also written as
 
 ```
 
+
 ### reactivity & template syntax
+
 
 ```js
 
